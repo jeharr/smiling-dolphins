@@ -77,8 +77,8 @@ app.post('/api/trip', function (req, res) {
 
 
 });
-
-app.listen(8000);
+var port = process.env.PORT || 8000;
+app.listen(port);
 console.log("listening on Port 8000...")
 // USERS:
 
