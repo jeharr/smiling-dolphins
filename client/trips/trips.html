@@ -10,8 +10,8 @@
     </ul>
   </div>
   <br/>
-  <form class="add-form" name="addForm" ng-submit="tripsCtrl.addTrip(addForm.$valid)" ng-if="tripsCtrl.isAuth" novalidate>
+  <form class="add-form" name="addForm" ng-submit="tripsCtrl.addTrip(addForm.$valid)">
     <input name="hashtag" type="text" ng-model="tripsCtrl.hashtag" placeholder="trip hashtag..." required>
-    <button class="add-btn" type="submit" ng-disabled="addForm.$invalid">add your trip!</button>
+    <button class="add-btn" type="submit">add your trip!</button>
   </form>
 </div>
